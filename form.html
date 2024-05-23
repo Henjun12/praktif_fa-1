@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DFP50193 Web Programming Marks Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            background-color: yellow;
+            padding: 20px;
+            border: 2px solid yellowgreen;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-container h2 {
+            margin: 10px 0;
+        }
+
+        .form-container input[type="text"] {
+            width: 100px;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>DFP50193 Web Programming Marks Calculator</h1>
+        <form action="calculate.php" method="post">
+            <h2>Laboratory Exercises (4)</h2>
+            <input type="text" name="lab1" placeholder="Lab 1 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+            <input type="text" name="lab2" placeholder="Lab 2 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+            <input type="text" name="lab3" placeholder="Lab 3 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+            <input type="text" name="lab4" placeholder="Lab 4 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+
+            <h2>Problem Based Tasks (2)</h2>
+            <input type="text" name="pbt1" placeholder="PBT 1 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+            <input type="text" name="pbt2" placeholder="PBT 2 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+
+            <h2>Case Study (1)</h2>
+            <input type="text" name="case_study" placeholder="Case Study Marks" pattern="\d*" title="Please enter a valid number" required><br>
+
+            <h2>PBT Presentations (2)</h2>
+            <input type="text" name="presentation1" placeholder="Presentation 1 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+            <input type="text" name="presentation2" placeholder="Presentation 2 Marks" pattern="\d*" title="Please enter a valid number" required><br>
+
+            <br>
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+</body>
+</html>
